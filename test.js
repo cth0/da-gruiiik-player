@@ -234,7 +234,7 @@ var analyser = audioCtx.createAnalyser();
 // fttsize must be power of 2
 // frequencyBinCount = fftsize / 2
 
-analyser.fftSize=128;
+analyser.fftSize=64;
 
 audioSrc.connect(analyser);
 audioSrc.connect(audioCtx.destination);
@@ -259,15 +259,16 @@ var mirrorCtx=mirror.getContext("2d");
 //gradient.addColorStop(0,'#ffffff');
 
 var gradient1=canvasCtx.createLinearGradient(0,0,0,canvas.height);
-gradient1.addColorStop(1, "rgba(255,0,220,1)" ); 
-gradient1.addColorStop(0, "rgba(255,0,220,0)" ); 
+gradient1.addColorStop(1.0, "rgba(255,255,255,1)" ); 
+gradient1.addColorStop(0.5, "rgba(136,201,58,1)" ); 
+gradient1.addColorStop(0.0, "rgba(136,201,58,0)" ); 
 //gradient1.addColorStop(1,'#000000');
 //gradient1.addColorStop(0.75,'#ff0000');
 //gradient1.addColorStop(0.25,'#ffff00');
 
 var gradient2=mirrorCtx.createLinearGradient(0,0,0,mirror.height);
-gradient2.addColorStop(0, "rgba(105,0,220,1)" );
-gradient2.addColorStop(1, "rgba(105,0,220,0)" );
+gradient2.addColorStop(0.0, "rgba(136,201,58,0.75)" );
+gradient2.addColorStop(1.0, "rgba(136,201,58,0)" );
 
 
 
