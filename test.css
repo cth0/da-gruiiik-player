@@ -87,8 +87,8 @@ img#playbutton {
   padding: 0px;
   margin: 0px;
   position: absolute;
-  top: 128px;
-  left: 168px;
+  top: 138px;
+  left: 160px;
   cursor: default;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -100,7 +100,7 @@ img#playbutton {
 
 
 div#timeline{
-  width: 3200px;
+  width: 320px;
   height: 10px;
   padding: 0px;
   margin: 0px;
@@ -109,8 +109,8 @@ div#timeline{
   margin-top: 0px;
   //float: left;
   position: absolute;
-  top: 128px;
-  left: 190px;
+  top: 145px;
+  left: 182px;
   border-radius: 15px;
   cursor: default;
   -webkit-user-select: none;
