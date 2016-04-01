@@ -210,7 +210,8 @@ function renderFrame()
       canvasCtx.clearRect(0, 0, 300, 150);
       mirrorCtx.clearRect(0, 0, 300, 150);
 
-      canvasCtx.fillStyle=gradient;
+      canvasCtx.fillStyle=gradient1;
+      mirrorCtx.fillStyle=gradient2;
       drawSpectrum(frequencyData);
       drawSpectrumMirror(frequencyData);
     }
@@ -270,13 +271,22 @@ var canvasCtx=canvas.getContext("2d");
 var mirror=document.getElementById("mirror");
 var mirrorCtx=mirror.getContext("2d");
 
-var gradient=canvasCtx.createLinearGradient(0,0,0,300);
-gradient.addColorStop(1,'#000000');
-gradient.addColorStop(0.75,'#ff0000');
-gradient.addColorStop(0.25,'#ffff00');
-gradient.addColorStop(0,'#ffffff');
+//var gradient=canvasCtx.createLinearGradient(0,0,0,300);
+//gradient.addColorStop(1,'#000000');
+//gradient.addColorStop(0.75,'#ff0000');
+//gradient.addColorStop(0.25,'#ffff00');
+//gradient.addColorStop(0,'#ffffff');
 
+var gradient1=canvasCtx.createLinearGradient(0,0,0,canvas.height);
+gradient1.addColorStop(1, "rgba(255,0,220,1)" ); 
+gradient1.addColorStop(0, "rgba(255,0,220,0)" ); 
+//gradient1.addColorStop(1,'#000000');
+//gradient1.addColorStop(0.75,'#ff0000');
+//gradient1.addColorStop(0.25,'#ffff00');
 
+var gradient2=mirrorCtx.createLinearGradient(0,0,0,mirror.height);
+gradient2.addColorStop(0, "rgba(105,0,220,1)" );
+gradient2.addColorStop(1, "rgba(105,0,220,0)" );
 
 
 

@@ -13,7 +13,7 @@ div#audioplayer {
   background: rgba(255,255,255,0.1);
   overflow: hidden;
   width: 520px;
-  height: 500px;  // 200 px
+  height: 170px;  // 200 px
   padding: 0px;
   margin: 0px auto;
   border-radius: 10px;
