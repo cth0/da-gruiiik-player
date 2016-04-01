@@ -100,12 +100,12 @@ img#playbutton {
 
 
 div#timeline{
-  width: 200px;
+  width: 3200px;
   height: 10px;
   padding: 0px;
   margin: 0px;
   background: rgba(0,0,0,0.0);
-  background-image: url("timeline-200x10.png");
+  background-image: url("timeline-320x10.png");
   margin-top: 0px;
   //float: left;
   position: absolute;
