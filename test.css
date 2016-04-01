@@ -197,16 +197,17 @@ button:active {
 
 div#time { 
   border: 0px;
-  background: rgba(0,0,0,0.0);
+  //background: rgba(0,0,0,0.0);
+  background: rgba(0,0,0,1.0);
   color: #fff;
-  padding: 0px;
-  margin: 2px;
+  padding: 2px;
+  margin: 0px;
   font-size: 0.6rem;
   font-weight: normal;
   font-family: "Arial" ;
   position: absolute;
-  top: 90px;
-  left: 168px;
+  top: 110px;
+  left: 490px;
   cursor: default;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -224,7 +225,7 @@ div#duration {
   font-weight: normal;
   font-family: "Arial" ;
   position: absolute;
-  top: 105px;
+  top: 70px;
   left: 168px;
   cursor: default;
   -webkit-user-select: none;
@@ -236,7 +237,7 @@ div#duration {
 
 canvas#canvas { 
   display: block;
-  border: 1px solid red;
+  border: 0px solid red;
   padding: 0px;
   margin: 0px;
   position: absolute;
@@ -254,7 +255,7 @@ canvas#canvas {
 
 canvas#mirror { 
   display: block;
-  border: 1px solid green;
+  border: 0px solid green;
   padding: 0px;
   margin: 0px;
   position: absolute;

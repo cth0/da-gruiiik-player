@@ -20,23 +20,9 @@ function player()
 
 function debug()
 {
-  var string = "timelineWidth: " + timelineWidth + "\n" ; 
 
-//  string += "currentTime: " + audiotrack.currentTime + "\n" ;
-//  string += "duration : " + duration +"\n" ;
+  alert ( "coucou" );
 
-//  string += "old margin: " + playhead.style.marginLeft + "\n";
-
-//  var playPercent = timelineWidth * (audiotrack.currentTime / duration);
-//  string += "newmargin: " + playPercent + "px";
-
-  var minutes = Math.floor ( audiotrack.currentTime / 60 ) ;
-  var seconds = Math.floor ( audiotrack.currentTime - ( 60*minutes));
-  var xseconds = "" + seconds ;  
-
-  alert ( "seconds : " + seconds + "\n" + "length : " + xseconds.length );
-
-//  alert (string);
 }
 
 
@@ -77,11 +63,6 @@ function timeUpdate() {
 	else
 	  label.innerHTML = minutes + ":" + seconds ;
 
-	
-	//if (audiotrack.currentTime == duration) {
-	//	playButton.className = "";
-	//	playButton.className = "play";
-	//}
 }
 
 
@@ -92,7 +73,8 @@ function timeUpdate() {
 function getDuration () 
 {
   duration = audiotrack.duration;
-  var label=document.getElementById("duration");
+  //var label=document.getElementById("duration");
+  var label=document.getElementById("time");
   var minutes = Math.floor ( duration / 60 ) ;
   var seconds = Math.floor ( duration - ( 60*minutes));
   
@@ -126,7 +108,6 @@ function moveplayhead(e) {
 
 
     var newtime = (newMargLeft / timelineWidth) * duration ;
-    //alert ("duration : " + duration + "\n" + "new time : " + newtime);
 
     if ( newtime <= 0 )
       {
@@ -171,7 +152,7 @@ var timeline = document.getElementById("timeline") ;
 var audioPlayer = document.getElementById("audioplayer") ;
 var playButton = document.getElementById("playbutton");
 var timeButton = document.getElementById("time");
-var debugButton = document.getElementById("debug");
+//var debugButton = document.getElementById("debug");
 
 var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
 
@@ -185,7 +166,7 @@ audioTrack.addEventListener("ended" , finish);
 
 playButton.addEventListener ("click", player);
 timeButton.addEventListener ("mousedown", switchTimeDisplay);
-debugButton.addEventListener ("click", debug);
+//debugButton.addEventListener ("click", debug);
 
 
 timeline.addEventListener("click", function(event){moveplayhead(event);}, false);
