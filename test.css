@@ -9,8 +9,8 @@
 * { box-sizing: border-box; }
 
 div#audioplayer { 
-  border: 1px solid #000000;
-  background: rgba(255,255,255,0.1);
+  border: 0px solid #000000;
+  background: rgba(255,255,255,0.2);
   overflow: hidden;
   width: 520px;
   height: 170px;  // 200 px
@@ -198,7 +198,7 @@ button:active {
 div#time { 
   border: 0px;
   //background: rgba(0,0,0,0.0);
-  background: rgba(0,0,0,1.0);
+  background: rgba(0,0,0,0.8);
   color: #fff;
   padding: 2px;
   margin: 0px;
