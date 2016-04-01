@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>test player</title>
+
+<link rel="stylesheet" type="text/css" href="test.css">
+
+</head>
+
+<body bgcolor=#555555>
+<center>
+<br>
+<br>
+
+<audio id="audiotrack" >
+  <source src="/hardporc/audio/gruiiik - absinthe.mp3" type="audio/mpeg">
+</audio>
+
+
+<div id="audioplayer">
+
+  <img id="thumb" src="/hardporc/audio/absinthe-900x900.jpg" alt="image">
+  
+  <canvas id="canvas" ></canvas>
+  <canvas id="mirror" ></canvas>
+
+  <div id="artist" itemprop="byArtist">gruiiik</div>
+  <div id="title" itemprop="name">Absinthe</div>
+  <div id="time">00:00</div>
+  <div id="duration" itemprop="duration">00:00</div>
+
+  <!--<button id="playbutton"><img id="button_play" src="button_play_24x24.png"></button> -->
+  <!-- <button id="playbutton" class="play"></button>  -->
+  <img id="playbutton" src="button_play_24x24.png">
+
+  <div id="timeline">
+    <div id="playhead"></div>
+  </div>
+
+  <button id="debug">debug!</button>
+
+
+</div>
+
+
+
+
+
+<!--
+  <div id="fader">
+    <input type="range" min="0" max="1" step="any" value="1" orient="vertical" id="volumeSlider">
+    <button type="button">volumehigh</button>
+  </div>
+
+
+-->
+<!--   <audio src="/hardporc/audio/gruiiik - absinthe.mp3" id="audiotrack" itemprop="audio" preload="true"></audio> -->
+</figure>
+
+</center>
+
+<!-- SCRIPT -->
+<script src=test.js>
+</script>
+
+</body>
+</html>
+
+
+
+<!-- 
+http://codepen.io/katzkode/pen/Kfgix
+http://www.alexkatz.me/html5-audio/building-a-custom-html5-audio-player-with-javascript/
+-->

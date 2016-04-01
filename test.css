@@ -1,0 +1,391 @@
+// CSS
+
+@font-face {  
+  font-family: gruiiik1942; 
+  src: local('1942 report') url('gruiiik-1942.ttf') format('truetype');
+}
+
+
+* { box-sizing: border-box; }
+
+div#audioplayer { 
+  border: 1px solid #000000;
+  background: rgba(255,255,255,0.1);
+  overflow: hidden;
+  width: 520px;
+  height: 500px;  // 200 px
+  padding: 0px;
+  margin: 0px auto;
+  border-radius: 10px;
+  position: relative;
+  cursor: default;
+ }
+
+
+img#thumb { 
+  border-radius: 10px;
+  border: 0px solid #ffffff;
+  background: rgba(0,0,0,0.0);
+  width: 150px;
+  height: 150px;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ }
+
+
+div#title { 
+  border: 0px;
+  background: rgba(0,0,0,0.0);
+  color: #fff;
+  padding: 0px;
+  margin: 2px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Arial";
+  position: absolute;
+  top: 16px;
+  left: 168px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ }
+
+div#artist { 
+  border: 0px;
+  background: rgba(0,0,0,0.0);
+  color: #fff;
+  padding: 0px;
+  margin: 2px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-family: "Arial" ;
+  position: absolute;
+  top: 48px;
+  left: 168px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ }
+
+
+
+img#playbutton { 
+  border: 0px;
+  background: rgba(0,0,0,0.0);
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 128px;
+  left: 168px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ }
+
+
+
+
+div#timeline{
+  width: 200px;
+  height: 10px;
+  padding: 0px;
+  margin: 0px;
+  background: rgba(0,0,0,0.0);
+  background-image: url("timeline-200x10.png");
+  margin-top: 0px;
+  //float: left;
+  position: absolute;
+  top: 128px;
+  left: 190px;
+  border-radius: 15px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ 
+div#playhead{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 0px;
+  margin-left: 0px;
+  background: rgba(0, 0, 0, 0);
+  float: left;
+  background-image: url("playhead-10x10.png");
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+
+
+button:hover { 
+  background: rgba(0,0,0,0.0);
+  border: 0px solid;
+ }
+
+button:active { 
+  background: rgba(0,0,0,0.0);
+  border: 0px solid;
+ }
+
+
+button#playbutton { 
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  border: 0px solid;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  top: 128px;
+  left: 168px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ }
+
+button#debug { 
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 88px;
+  left: 268px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.play{background: url("button_play_24x24.png") ;}
+.pause{background: url("button_pause_24x24.png") ;}
+
+
+button:hover { 
+ }
+
+button:active { 
+ }
+
+
+
+div#time { 
+  border: 0px;
+  background: rgba(0,0,0,0.0);
+  color: #fff;
+  padding: 0px;
+  margin: 2px;
+  font-size: 0.6rem;
+  font-weight: normal;
+  font-family: "Arial" ;
+  position: absolute;
+  top: 90px;
+  left: 168px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ }
+
+div#duration { 
+  border: 0px;
+  background: rgba(0,0,0,0.0);
+  color: #fff;
+  padding: 0px;
+  margin: 2px;
+  font-size: 0.6rem;
+  font-weight: normal;
+  font-family: "Arial" ;
+  position: absolute;
+  top: 105px;
+  left: 168px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ }
+
+
+canvas#canvas { 
+  display: block;
+  border: 1px solid red;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 10px;
+  left: 160px;
+  width: 350px;
+  height: 100px;
+  cursor: default;
+  background: rgba(0.0,0,0,0.0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ }
+
+canvas#mirror { 
+  display: block;
+  border: 1px solid green;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 110px;
+  left: 160px;
+  width: 350px;
+  height: 50px;
+  cursor: default;
+  background: rgba(0.0,0,0,0.0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ }
+
+
+
+/*
+figure#audioplayer audio {  
+  width: 0; 
+  height: 0; 
+ } 
+*/
+
+
+
+
+
+
+
+
+
+// ---------------------------
+
+/*
+
+
+
+
+
+div#album { 
+  border-top: 1px solid #00ff00;
+  border-left: 1px solid #00ff00;
+  width: 100%;
+ }
+
+
+div#time { 
+  width: 7.55rem;
+  border-left: 1px solid #00ff00;
+ }
+
+input#volumeSlider { 
+  -webkit-appearance: slider-vertical;
+  width: 35px;
+ }
+
+figure#audioplayer button { 
+  width: 3rem;
+  height: 3rem;
+  background: #ffffff;
+  color: #0000ff;
+  border: none;
+  -webkit-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+ }
+
+#playback { 
+  clear: both;
+ }
+
+div#fader{ 
+  display: inline-block;
+ }
+
+#playback progress { 
+  margin-left: 1rem;
+  width: 20rem;
+  height: 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #8888;
+  border: none;
+  color: hsl(44,100%,44%);
+ }
+
+progress::-webkit-progress-bar,
+progress::-moz-progress-bar,
+progress::progress-bar { 
+  background: hsl(44,100%,44%);
+ }
+
+progress::-webkit-progress-value { 
+  background: hsl(44,100%,44%);
+ }
+
+progress::-moz-progress-bar { 
+  background-color: hsl(44,100%,44%);
+ }
+
+@media screen and (max-width: 500px) { 
+  div#time { 
+    display: block !important;
+    border-top: 1px solid #5555;
+    width: 100%;
+   }
+  figure#audioplayer { 
+    width: 100%;
+    padding: .2rem;
+   }
+  figure#audioplayer figcaption div { 
+    padding: .4rem;
+   }
+ }
+
+
+
+@media screen and (max-width: 450px) { 
+  figure#audioplayer figcaption { 
+    width: 16rem;
+   }
+  #playback progress { 
+    width: 220px;
+   }
+}
+
+@media screen and (max-width: 400px) { 
+  figure#audioplayer figcaption { 
+    width: 14rem;
+  }  
+}  
+
+*/
